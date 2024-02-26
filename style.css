@@ -1,0 +1,62 @@
+
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#try-again-btn {
+
+    margin-left: 665px;
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+#try-again-btn:hover {
+    background-color: darkgray;
+   
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: .5em;
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cell{
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    font-size: 300%;
+
+    background-color: #888;
+    border: 4px, outset darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
